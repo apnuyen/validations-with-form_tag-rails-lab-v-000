@@ -13,19 +13,18 @@
 <%end%>
 
 <% if @post.errors[:title].empty? %>
-  <div class="field"></div>
+  <div class="field">
 <%else%>
-  <div class="field_with_errors"></div>
+  <div class="field_with_errors">
 <%end%>
 
-</div>
   <div class="field">
     <%= label_tag "title", "Title" %>
     <%= text_field_tag "title", @post.title %>
   </div>
 
 <% if @post.errors[:category].empty? %>
-  <div class="field"></div>
+  <div class="field">
 <%else%>
   <div class="field_with_errors">
 <%end%>
@@ -41,7 +40,7 @@
   </div>
 
 <% if @post.errors[:content].empty? %>
-  <div class="field"></div>
+  <div class="field">
 <%else%>
   <div class="field_with_errors">
 <%end%>
